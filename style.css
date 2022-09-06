@@ -6,6 +6,8 @@
     --accent-color:#B36F7C;
     --dark-color: #2B5566;
     --text-bright-color:#fff;
+    --icon-color: #fff;
+    --icon-bk-color:#ddd;
 }
 
 /* 기본 설정: 페이지 전체 */
@@ -67,6 +69,47 @@ body {
         rgba(255, 255, 255, 0.2),
         rgba(255,255,255,0.2)
     );
+}
+
+.conB h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.conB p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conB a {
+    color: #5D9AB2;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.conB a:hover {
+    text-decoration: underline;
+}
+.conB .icon {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #ddd;
+    background-color: var(--icon-bk-color);
+    color: #fff;
+    color: var(--icon-color);
+}
+
+.conB .text {
+    text-align: center;
 }
 
 @media (min-width: 768px) {

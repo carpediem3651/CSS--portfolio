@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 대체 글자를 브라우저 화면에 출력하지 않기 위한 설정. */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
     <script src="https://kit.fontawesome.com/15eba7c52a.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
+    <header>
+    <div class="container">
+        <a href="index.html" class="headA">MUSIC</a>
+    </div>
+    </header>
+
     <section class="conA">
     <div class="container">
         <img src="img/musicians-1428749_1280.png" alt="">
@@ -73,5 +92,74 @@
             </div>
         </div>
     </section>
+
+    <footer>
+    <div class="container">
+        <div class="footA">
+            <h2>MUSIC</h2>
+            <p>
+            주소: 인천광역시 보컬구 드럼동<br>
+            <a href="#">http://MUSIC.net</a>
+            </p>
+
+            <nav class="footD">
+                <ul>
+                    <li><a href="#">
+                        <span class="fa-brands fa-twitter" title="Twitter"></span>
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="fa-brands fa-facebook" title="Facebook"></span>
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="fa-brands fa-google-plus" title="Google Plus"></span>
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="fa-brands fa-youtube" title="Youtube"></span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    <nav class="footB">
+        <div>
+            <h3>ABOUT</h3>
+            <ul>
+                <li><a href="#">설립</a></li>
+                <li><a href="#">주소</a></li>
+                <li><a href="#">지도</a></li>
+                <li><a href="#">스탬프</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>SUPPORT</h3>
+            <ul>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">매뉴얼</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>CONTENT</h3>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">비즈니스</a></li>
+                <li><a href="#">프로필</a></li>
+                <li><a href="#">개발자</a></li>
+                <li><a href="#">블로그</a></li>
+            </ul>
+        </div>
+    </nav>  
+
+    <div class="footC">
+        © MUSIC corp. All right reserved.
+    </div>
+    </div>
+    </footer>
 </body>
 </html>

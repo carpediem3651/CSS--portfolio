@@ -20,12 +20,36 @@
         }
     </style>
     <script src="https://kit.fontawesome.com/15eba7c52a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+        $(function() {
+            $(".headC").click(function(){
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
     <title>Document</title>
 </head>
 <body>
     <header>
     <div class="container">
+     <div class="container-small">
+        <!-- 사이트 이름 -->
         <a href="index.html" class="headA">MUSIC</a>
+
+        <button type="button" class="headC">
+            <span class="fa-solid fa-bars" title="MENU"></span>
+        </button>
+     </div>
+        <!-- 토글 버튼 -->
+        <nav class="headB">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="contents.html">Contents</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
     </div>
     </header>
 

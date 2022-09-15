@@ -8,7 +8,41 @@
     --text-bright-color:#fff;
     --icon-color: #fff;
     --icon-bk-color:#ddd;
+    --gray-color: #ddd;
     --large-width: 1000px;
+    --middle-width: 800px
+}
+
+/* 기본 설정 : 폰트 크기 */
+@media(max-width:599px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 600px) and max(max-width:799px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:800px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+.post h1 {
+    padding-left: 0.5rem;
+    border-left: solid 0.75rem #bf6a7a;
+    border-left: solid 0.75rem var(--accent-color);
+    font-size: 2rem;
+    
+}
+
+.post p {
+    font-size: 1rem;
+    line-height: 2;
 }
 
 /* 기본 설정: 페이지 전체 */
@@ -437,6 +471,12 @@ header{
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+.nohero header {
+    position: static;
+    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--gray-color);
+}
+
 /* 헤더A: 사이트 이름 디자인하기*/
 .headA {
     display: inline-block;
@@ -514,6 +554,16 @@ header{
     .headB {
         display: none;
     }
+}
+
+/* 콘텐츠 페이지: 기사 */
+.post .container {
+    max-width: 800px;
+    max-width: var(--middle-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 10px;
+
 }
 
 

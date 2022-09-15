@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 대체 글자를 브라우저 화면에 출력하지 않기 위한 설정. */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/15eba7c52a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+        $(function() {
+            $(".headC").click(function(){
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body class="nohero">
+    <header>
+    <div class="container">
+     <div class="container-small">
+        <!-- 사이트 이름 -->
+        <a href="index.html" class="headA">MUSIC</a>
+
+        <button type="button" class="headC">
+            <span class="fa-solid fa-bars" title="MENU"></span>
+        </button>
+     </div>
+        <!-- 토글 버튼 -->
+        <nav class="headB">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="contents.html">Contents</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <article class="post">
+    <div class="container">
+
+        <h1>음악생활 시작하기</h1>
+        <p>일상 생활에서 음악을 듣고 악기를 배우며 연주하는 것을 "음악생활'이라고 합니다. 우리가 무심코 음원사이트에서 음악을 듣는 활동,
+            유튜브에서 음악을 찾아 듣는 행위, 리듬에 따라 무언가를 치고 음을 만드는 모든 행위가 음악생활의 일종입니다. 하지막 악기를 능숙하게
+            다루기란 쉽지 않습니다. 기타를 배우려고 하면 소리가 안나 그만두기 쉽상이고 드럼을 배우려하면 장소와 장비가 마땅찮아 악기를 다루고 싶어도
+            못 다룹니다.
+        </p>
+
+        <p>음악생활을 하는 건 인간의 본성이기에 문화센터, 유튜브, 유료 인터넷 강의, 음악학원 등 악기를 배우고 다룰 수 있는 다양한 서비스 및 기관들이 생겨나고
+            있습니다. 어떤 이들은 무료인 유튜브를 통해 악기를 배우고 능숙해져 그것이 직업이 됐습니다. 그리고 배운 것을 다시 유튜브에 올리고 강의 영상을 찍는
+        다양한 활동을 전방위적으로 합니다. 이렇게 음악에 대한 접근이 쉬워지고 있습니다. 주변을 조금만 살펴보면 음악을 배울 수 있는 다양한 창구들이 있습니다. </p>
+    </div>
+    </article>
+
+    <footer>
+    <div class="container">
+        <div class="footA">
+            <h2>MUSIC</h2>
+            <p>
+            주소: 인천광역시 보컬구 드럼동<br>
+            <a href="#">http://MUSIC.net</a>
+            </p>
+
+            <nav class="footD">
+                <ul>
+                    <li><a href="#">
+                        <span class="fa-brands fa-twitter" title="Twitter"></span>
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="fa-brands fa-facebook" title="Facebook"></span>
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="fa-brands fa-google-plus" title="Google Plus"></span>
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="fa-brands fa-youtube" title="Youtube"></span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    <nav class="footB">
+        <div>
+            <h3>ABOUT</h3>
+            <ul>
+                <li><a href="#">설립</a></li>
+                <li><a href="#">주소</a></li>
+                <li><a href="#">지도</a></li>
+                <li><a href="#">스탬프</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>SUPPORT</h3>
+            <ul>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">매뉴얼</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>CONTENT</h3>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">비즈니스</a></li>
+                <li><a href="#">프로필</a></li>
+                <li><a href="#">개발자</a></li>
+                <li><a href="#">블로그</a></li>
+            </ul>
+        </div>
+    </nav>  
+
+    <div class="footC">
+        © MUSIC corp. All right reserved.
+    </div>
+    </div>
+    </footer>
+</body>
+</html>
